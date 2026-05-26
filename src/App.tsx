@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import { Analytics } from '@vercel/analytics/react';
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Services from "./components/Services";
@@ -43,6 +44,7 @@ export default function App() {
       {/* Contact Section & Footer */}
       <Contact />
       <Footer />
+      <Analytics />
     </div>
   );
 }

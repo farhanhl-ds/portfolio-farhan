@@ -183,7 +183,7 @@ export default function Projects() {
               Featured Projects
             </span>
             <WordsPullUp
-              text="Built. Shipped. Proven."
+              text="Built.Shipped.Proven."
               className="font-serif italic text-4xl sm:text-5xl md:text-6xl text-[#E1E0CC] font-normal leading-none"
             />
           </div>
