@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #DEDBC8;
+  --font-sans: "Almarai", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "IBM Plex Mono", "Cascadia Code", "Source Code Pro", monospace;
+}
+
+@layer base {
+  body {
+     @apply font-sans bg-[#050505] text-[#F3F0E8];
+
+    background-image:
+    radial-gradient(circle at top,
+      rgba(255,255,255,0.03),
+      transparent 35%);
+  }
+
+  body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image:
+    url("https://grainy-gradients.vercel.app/noise.svg");
+}
+}
+
+* {
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Premium Light-Glass styling */
+.liquid-glass {
+  background: rgba(255,255,255,0.01);
+  background-blend-mode: luminosity;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: none;
+  box-shadow: inset 0 1px 1px rgba(255,255,255,0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.liquid-glass::before {
+  content: "";
+  position: absolute; inset: 0;
+  border-radius: inherit;
+  padding: 1.4px;
+  background: linear-gradient(180deg,
+    rgba(255,255,255,0.45) 0%,
+    rgba(255,255,255,0.15) 20%,
+    rgba(255,255,255,0) 40%,
+    rgba(255,255,255,0) 60%,
+    rgba(255,255,255,0.15) 80%,
+    rgba(255,255,255,0.45) 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.dark-glass {
+  background: rgba(8, 8, 8, 0.58);
+  backdrop-filter: blur(18px) saturate(120%);
+  -webkit-backdrop-filter: blur(18px) saturate(120%);
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow:
+    0 10px 40px rgba(0,0,0,0.45),
+    inset 0 1px 0 rgba(255,255,255,0.04);
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
