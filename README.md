@@ -1,20 +1,13 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Web Portfolio - Farhan
 
-# Run and deploy your AI Studio app
+Personal portfolio website built with React + Vite + Tailwind CSS v4. Features dark minimal aesthetic, liquid glass UI, and cinematic animations.
 
-This contains everything you need to run your app locally.
+**Live:** https://farhanhl-ds.vercel.app
 
-View your app in AI Studio: https://ai.studio/apps/d7861bf4-54ba-4e3f-8baf-c816fd8d1487
+## Tech Stack
 
-## Run Locally
+React 19 · TypeScript · Vite · Tailwind CSS v4 · Framer Motion · Vercel
 
-**Prerequisites:**  Node.js
+## Contact
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+farhanhamidlubis@gmail.com · [LinkedIn](https://www.linkedin.com/in/farhanhamidlubis/) · [GitHub](https://github.com/farhanhl-ds)
