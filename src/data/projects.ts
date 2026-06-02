@@ -61,7 +61,7 @@ export const baseProjects: ProjectItem[] = [
       "Orchestrating the full ML lifecycle — from raw e-commerce transactions to churn predictions — with reproducible pipelines and real-time dashboard updates.",
     solution:
       "Built modular Airflow DAGs for ingestion and feature engineering, integrated MLflow for model versioning, and exposed results via FastAPI with streaming SSE for live AI analytics.",
-    githubUrl: "https://github.com/farhanhl-ds/staywise",
+    githubUrl: "https://github.com/farhanhl-ds/staywise-ml-churn-platform",
   },
   {
     id: "02",
